@@ -17,7 +17,7 @@ import {SuggestionListComponent} from './components/form/suggestion-list/suggest
     AppComponent, FormComponent, SuggestionListComponent
   ],
   imports: [
-    BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule, AgmCoreModule.forRoot({apiKey: 'AIzaSyCD31I5SoDjEZU1q9dzPOM_FMzzjaP919s', libraries: ['places']})
+    BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule, AgmCoreModule.forRoot({apiKey: 'AIzaSyC7m2sRMSAROfGjr_Gufex4baYiyFpPDrM', libraries: ['places']})
   ],
   providers: [
 
