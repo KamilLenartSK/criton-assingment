@@ -1,0 +1,35 @@
+.address-form__wrapper {
+    flex: 1;
+    padding: 5em 3em 3em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    background-color: var(--form-bg-color);
+    border-radius: 10px;
+    color: var(--primary-font-color);
+}
+
+.address-form__input {
+    width: 100%;
+    font-size: 1.25em;
+    padding: 6px 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    box-shadow: none;
+    color: inherit;
+}
+
+.address-form__input:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.address-form__input::placeholder {
+    color: var(--form-placeholder-color);
+    opacity: 1;
+}
+
+.address-form__input:disabled,
+.address-form__input[readonly] {
+    background: var(--input-border-color);
+    opacity: 1;
+    cursor: not-allowed;
+}

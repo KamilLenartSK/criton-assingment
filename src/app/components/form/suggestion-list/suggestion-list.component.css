@@ -1,0 +1,30 @@
+.address-form__suggestions {
+    border-radius: 2px;
+    box-shadow: 4px 26px 79px -35px rgba(0, 0, 0, 0.75);
+}
+
+h4,
+h6 {
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+h6 {
+    font-size: 1.1rem;
+}
+
+.address-form__suggestions>li {
+    display: block;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+    color: inherit;
+    transition: color 0.2s ease-in-out;
+}
+
+.address-form__suggestions>li:hover {
+    color: var(--primary-highlight-color);
+}

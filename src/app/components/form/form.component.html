@@ -1,0 +1,14 @@
+<div class="address-form__wrapper">
+  <hr/>
+
+  <form [formGroup]="addressQueryForm">
+
+    <input id="address" #addressInput type="text" class="address-form__input" formControlName="address" placeholder="Address"
+      autocomplete="off">
+    <app-suggestion-list *ngIf="statusAutocomplete" [statusCode]="statusAutocomplete" [suggestions]="addressSuggestions" (onSuggestionSelect)="onSuggestionSelect($event)"></app-suggestion-list>
+    <input type="text" class="address-form__input" formControlName="latitude" aria-readonly="true" readonly placeholder="Latitude">
+    <input type="text" class="address-form__input" formControlName="longitude" aria-readonly="true" readonly placeholder="Longitude">
+
+
+  </form>
+</div>

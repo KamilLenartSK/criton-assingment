@@ -1,0 +1,6 @@
+<h4> Suggested Results</h4>
+<h6>Status: {{statusMessage}}</h6>
+<ul *ngIf="suggestions" class="address-form__suggestions">
+
+  <li (click)='onSelected(address)' *ngFor="let address of suggestions;">{{address.description}}</li>
+</ul>

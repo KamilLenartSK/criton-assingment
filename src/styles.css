@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-bg-color: #5c4084;
+    --primary-highlight-color:#ff4081;
+    --horizontal-line-gradient-black-opaque-1: rgba(0, 0, 0, 0.1);
+    --horizontal-line-gradient-white-opaque-3: rgba(255, 255, 255, 0.3);
+    --primary-font-color: #696969;
+    --form-placeholder-font-color:#333333;
+    --input-border-color:#ecf0f1;
+    --form-bg-color:#fff;
+}
+
+body {
+    background: var(--primary-bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    margin-bottom: 1em;
+    border: 0;
+    height: 0;
+    border-top: 1px solid var(--horizontal-line-gradient-black-opaque-1);
+    border-bottom: 1px solid var(--horizontal-line-gradient-white-opaque-3);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
